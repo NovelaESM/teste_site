@@ -152,21 +152,22 @@ h2 { color: #1e8449; margin-bottom: 20px; }
     gap: 25px;
     flex-wrap: wrap;
 }
-/*.card {
+.card {
     background: white;
     padding: 25px;
     width: 280px;
     border-radius: 20px;
     box-shadow: 0 5px 15px rgba(0,0,0,.1);
-}*/
+}
 
-.card p {
+/*.card p {
+vericar a mundaca
     display: flex;
     justify-content: flex-start;
     gap: 20px; /* espaço entre Telefone e Email */
     font-weight: bold;
     flex-wrap: wrap; /* garante que quebre linha em telas pequenas */
-}
+}*/
 
 
 /* IMPACTO */
