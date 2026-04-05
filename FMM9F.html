@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AFFM - Associação Futuros Farmeiros de Moçambique</title>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <a href="#home">Início</a>
+    <a href="sobre.html">Sobre</a>
+    <a href="projetos.html">Projetos</a>
+    <a href="contacto.html">Contactos</a>
+    <button class="lang-btn">PT</button>
+    <button class="lang-btn">EN</button>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <h1>Cultivando o Futuro de Moçambique</h1>
+    <p>Capacitação agrícola, juventude e desenvolvimento sustentável</p>
+    <button onclick="scrollPara('sobre')">Conheça a AFFM</button>
+</section>
+
+<!-- GALERIA -->
+<section>
+    <h2>Galeria de Atividades</h2>
+
+    <div class="slider" id="slider">
+        <button class="nav prev-btn" onclick="mover(-1)">❮</button>
+        <div class="slider-track" id="track"></div>
+        <button class="nav next-btn" onclick="mover(1)">❯</button>
+    </div>
+
+    <div class="dots" id="dots"></div>
+</section>
+
+<!-- QUEM SOMOS -->
+<section id="sobre">
+    <h2>Quem Somos</h2>
+    <div class="cards">
+        <div class="card">
+            <h3>🌱 Agricultura Sustentável</h3>
+            <p>Promoção de práticas agrícolas modernas e sustentáveis.</p>
+        </div>
+        <div class="card">
+            <h3>👩‍🌾 Juventude Rural</h3>
+            <p>Capacitação de jovens agricultores e líderes comunitários.</p>
+        </div>
+        <div class="card">
+            <h3>📚 Formação</h3>
+            <p>Treinamentos técnicos e empreendedorismo agrícola.</p>
+        </div>
+    </div>
+</section>
+
+<!-- IMPACTO -->
+<section class="impacto">
+    <h2>Nosso Impacto</h2>
+    <div class="cards">
+        <div class="card"><h3>+500</h3><p>Jovens capacitados</p></div>
+        <div class="card"><h3>+20</h3><p>Comunidades apoiadas</p></div>
+        <div class="card"><h3>+10</h3><p>Projetos agrícolas</p></div>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="cta">
+    <h2>Junte-se à AFFM e transforme vidas</h2>
+    <button onclick="scrollPara('contacto')">Contacte-nos</button>
+</section>
+
+<!-- contacto -->
+<section>
+    <h2>Contacte-nos</h2>
+    <p>Entre em contacto com a AFFM. Responderemos o mais breve possível.</p>
+
+    <div class="cards">
+        <div class="card">
+            <h3>📞 Telefone</h3>
+            <p>+258 84 187 6021</p>
+            <h3>📧 Email</h3>
+            <p>loydtavira2@gmail.com</p>
+        </div>
+
+        <div class="card">
+            <form action="enviar.php" method="POST">
+                <input type="text" name="nome" placeholder="Seu nome" required>
+                <input type="email" name="email" placeholder="Seu email" required>
+                <input type="tel" name="contacto" placeholder="Contacto" required>
+                <textarea name="mensagem" rows="5" placeholder="Mensagem" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+<footer id="contacto">
+    © 2026 - AFFM | Associação Futuros Farmeiros de Moçambique
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
